@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="script/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Umetna inteligenca</h1>
+                <h3>seminarska naloga 2 - labirinti</h3>
+            </div>
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="col-md-4">
+                <label for="file-input">1. Korak: izberi datoteko</label>
+                <div class="input-group">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="file-input" aria-describedby="file-input">
+                        <label class="custom-file-label" for="file-input">Izberi datoteko z labirintom</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col">
+                        <label for="algoritm-group">2. Korak: Izberi algoritem</label>
+                        <div class="input-group" id="algoritm-group">
+                            <div class="custom-control custom-radio">
+                                <input checked type="radio" id="radio-algo-1" name="customRadio"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="radio-algo-1">DFS</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="radio-algo-2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="radio-algo-2">BFS</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="radio-algo-3" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="radio-algo-3">A*</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="btn-start">3. Korak</label>
+                <div class="input-group">
+                    <button type="button" class="btn btn-success" id="btn-start">Začni</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8" id="canvas-container">
+
+            </div>
+            <div class="col-md-4">
+                <ul id="log-span">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+
+</html>
